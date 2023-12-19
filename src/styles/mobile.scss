@@ -373,7 +373,7 @@
   .history-area .buy-tickets-area {
     font-size: 16px;
   }
-  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .css-1q2h7u5 {
     display: block  !important;
     width: 100%  !important;
     border-radius: 5px  !important;
@@ -383,7 +383,7 @@
     margin: 5px 0 !important;
     font-size: 20px !important;
   }
-  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1q2h7u5.Mui-selected  {
     font-size: 20px !important;
   }
   .table-list-area .css-heg063-MuiTabs-flexContainer, .css-k008qs {
@@ -402,7 +402,7 @@
     align-items: center;
   }
   .table td img {
-    height: auto;
+    //height: auto;
   }
   .css-k008qs {
     flex-direction: column;
