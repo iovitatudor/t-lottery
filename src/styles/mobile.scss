@@ -1,0 +1,407 @@
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #FEDB63;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.burgher-area {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+
+  .drawer {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    right: -370px;
+    z-index: 3;
+    transition: all 0.2s ease;
+
+    a {
+      width: 50%;
+      margin: 3px 0;
+      font-size: 18px;
+      color: #000;
+      transition: all 200ms ease;
+      text-decoration: none;
+      padding: 10px;
+
+      &:hover {
+        color: #DF5537;
+      }
+    }
+  }
+
+  .open-drawer {
+    right: 0;
+
+    a {
+      transition: all 1000ms ease;
+      color: #FFF;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .top-bar {
+    padding: 15px 0;
+  }
+
+  .main-btn {
+    font-size: 14px;
+    padding: 13px 20px;
+  }
+
+  .top-bar .top-bar-inside .header-buttons {
+    justify-content: space-between;
+  }
+
+  .banner-area img {
+    margin-top: 30px;
+  }
+
+  .rewarding-area {
+    margin-top: 15px;
+    padding-top: 70px;
+  }
+
+  .rewarding-area .rewarding-area-inside .countdown .countdown-item {
+    margin: 0 5px;
+
+    p {
+      font-size: 30px;
+      width: 90px;
+      height: 90px;
+    }
+
+    span {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+  .rewarding-area .rewarding-area-inside {
+    background-color: #02c7f0;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .rewarding-area .rewarding-area-inside .countdown {
+    width: 95%;
+    height: 180px;
+    left: 0;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .rewarding-area .rewarding-area-inside .reward-banner {
+    margin-top: 50px;
+    padding: 15px;
+  }
+
+  .rewarding-area .rewarding-area-inside .reward-banner .reward-banner-part {
+    padding: 0;
+    text-align: center;
+
+    h2 {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    img {
+      width: 60%;
+      margin-top: 30px;
+    }
+
+    h4 {
+      font-size: 28px;
+      margin-top: 20px;
+      text-align: center;
+      justify-content: center;
+      text-shadow: -1px 2px 2px #000;
+
+      img {
+        width: 55px;
+        margin-top: 0;
+      }
+    }
+  }
+  .holder-table-area {
+    padding-top: 0;
+  }
+  .holder-table-area .table-wrapper h3 {
+    font-size: 28px;
+    margin: 20px 0;
+
+    img {
+      height: 30px;
+    }
+  }
+  .holder-table-area .table-wrapper {
+    //overflow-x: scroll;
+
+    .table-inside {
+      padding: 10px;
+      position: relative;
+    }
+  }
+  .css-13xfq8m-MuiTabPanel-root {
+    padding: 0 !important;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    flex-direction: column;
+  }
+
+  .table td {
+    letter-spacing: normal;
+    font-size: 14px;
+    min-width: 100px;
+  }
+  .table th {
+    letter-spacing: normal;
+    font-size: 15px;
+    line-height: 1;
+  }
+  .holder-table-area .table-wrapper .table-inside .search-input {
+    display: none;
+  }
+  .table-container {
+    overflow-x: scroll;
+  }
+  .holder-table-area {
+    background-size: cover;
+
+    .holder-table-area-inside {
+      padding-bottom: 30px;
+    }
+  }
+  .check-eligibility-area {
+    background-size: cover;
+
+    h3 {
+      font-size: 23px;
+      padding: 0 15px;
+      margin: 30px auto;
+
+      img {
+        height: 60px;
+        margin-right: 0;
+      }
+    }
+  }
+  .check-eligibility-area {
+    padding-bottom: 30px;
+  }
+  .check-eligibility-area .eligibility-item {
+    min-height: auto;
+    padding: 16px 13px;
+    margin: 10px 0;
+  }
+  .check-eligibility-area .eligibility-item p {
+    font-size: 16px;
+  }
+  .check-eligibility-area .eligibility-item img {
+    width: 45px;
+  }
+  .how-participate-area {
+    background-size: cover;
+  }
+  .how-participate-area {
+    text-align: center;
+
+    h3 {
+      font-size: 23px;
+      padding: 0 15px;
+      margin: 30px auto;
+
+      img {
+        height: 60px;
+        margin-right: 10px;
+      }
+    }
+
+    .participate-conditions {
+      padding: 15px;
+    }
+  }
+  .how-participate-area {
+    padding-bottom: 30px;
+  }
+  .how-participate-area .participate-image {
+    display: block;
+    margin: 30px auto;
+  }
+  .how-participate-area .participate-conditions p {
+    font-size: 18px;
+  }
+  .how-participate-area .participate-conditions h5 {
+    font-size: 22px;
+  }
+  .how-participate-area .participate-conditions p b {
+    font-size: 16px;
+  }
+  .how-participate-area .participate-conditions p small {
+    font-size: 13px;
+  }
+  .table-list-area {
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .table-list-area .css-jpln7h-MuiTabs-scroller {
+    flex-direction: column;
+  }
+  .lottery-area {
+    overflow-x: scroll;
+    padding: 15px;
+  }
+  .table-list-area .css-heg063-MuiTabs-flexContainer {
+    align-items: center;
+  }
+  .jackpot-area {
+    padding-bottom: 50px;
+  }
+  .jackpot-area::before {
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+  }
+  .jackpot-area .jackpot-details {
+    margin-bottom: 0;
+  }
+  .jackpot-area .jackpot-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .jackpot-area-inside {
+    overflow-x: scroll;
+  }
+  .table td .ball {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    font-size: 10px;
+  }
+  .table td img {
+    height: 55px;
+  }
+  .history-area-scroll {
+    overflow-x: scroll;
+  }
+  .history-area .buy-tickets-area {
+    margin-top: 30px;
+  }
+  .history-area .buy-tickets-area h6 {
+    font-size: 22px;
+  }
+  .history-area .buy-tickets-area {
+    font-size: 16px;
+  }
+  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 4px solid var(--black-3, #000);
+    background: var(--yellow--1, #FEE89A);
+    box-shadow: -3px 3px 0px 0px #000;
+    margin: 5px 0;
+    font-size: 20px;
+  }
+  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    font-size: 20px;
+  }
+  .table-list-area .css-heg063-MuiTabs-flexContainer {
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+  .history-area .buy-tickets-area button {
+    padding: 13px 30px;
+  }
+  .history-area .history-area-inside {
+    padding: 0 15px 50px 15px;
+  }
+  .check-eligibility-area .eligibility-item {
+    align-items: center;
+  }
+  .table td img {
+    height: auto;
+  }
+}

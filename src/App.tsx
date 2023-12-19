@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/desktop.scss';
+import './styles/mobile.scss';
+import TopBar from "./components/TopBar";
+import TopBarMobile from "./components/TopBarMobile";
+import Banner from "./components/Banner";
+import Rewarding from "./components/Rewarding";
+import HolderTable from "./components/HolderTable";
+import CheckEligibility from "./components/CheckEligibility";
+import HowParticipate from "./components/HowParticipate";
+import TableList from "./components/Tables/TableList";
+import {BrowserView, MobileView} from 'react-device-detect';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserView><TopBar/></BrowserView>
+      <MobileView><TopBarMobile/></MobileView>
+      <Banner/>
+      <Rewarding/>
+      <HolderTable/>
+      <CheckEligibility/>
+      <HowParticipate/>
+      <TableList/>
     </div>
   );
 }
