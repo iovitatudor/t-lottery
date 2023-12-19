@@ -373,17 +373,17 @@
   .history-area .buy-tickets-area {
     font-size: 16px;
   }
-  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .css-1q2h7u5 {
-    display: block  !important;
-    width: 100%  !important;
-    border-radius: 5px  !important;
-    border: 4px solid var(--black-3, #000)  !important;
-    background: var(--yellow--1, #FEE89A)  !important;
+  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .table-list-area .css-1q2h7u5 {
+    display: block !important;
+    width: 100% !important;
+    border-radius: 5px !important;
+    border: 4px solid var(--black-3, #000) !important;
+    background: var(--yellow--1, #FEE89A) !important;
     box-shadow: -3px 3px 0px 0px #000 !important;
     margin: 5px 0 !important;
     font-size: 20px !important;
   }
-  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1q2h7u5.Mui-selected  {
+  .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected, .table-list-area .css-1q2h7u5.Mui-selected {
     font-size: 20px !important;
   }
   .table-list-area .css-heg063-MuiTabs-flexContainer, .css-k008qs {
@@ -409,5 +409,10 @@
   }
   .css-19kzrtu {
     padding: 0;
+  }
+  .table-list-area .css-heg063-MuiTabs-flexContainer, .table-list-area .css-k008qs {
+    background: none;
+    border: none;
+    box-shadow: none;
   }
 }
