@@ -221,7 +221,7 @@
       position: relative;
     }
   }
-  .css-13xfq8m-MuiTabPanel-root {
+  .css-13xfq8m-MuiTabPanel-root, .css-19kzrtu {
     padding: 0 !important;
   }
   .css-heg063-MuiTabs-flexContainer {
@@ -386,7 +386,7 @@
   .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
     font-size: 20px !important;
   }
-  .table-list-area .css-heg063-MuiTabs-flexContainer {
+  .table-list-area .css-heg063-MuiTabs-flexContainer, .css-k008qs {
     border-radius: 0 !important;
     border: none !important;
     background: transparent !important;
@@ -403,5 +403,11 @@
   }
   .table td img {
     height: auto;
+  }
+  .css-k008qs {
+    flex-direction: column;
+  }
+  .css-19kzrtu {
+    padding: 0;
   }
 }
