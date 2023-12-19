@@ -499,42 +499,42 @@ h3 {
   background-color: #f14727;
 
   .css-jpln7h-MuiTabs-scroller {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
   }
 
   .css-heg063-MuiTabs-flexContainer {
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    border: 4px solid var(--black-3, #000);
-    background: var(--yellow--1, #FEE89A);
-    box-shadow: -3px 3px 0px 0px #000;
-    margin-bottom: 20px;
+    display: flex !important;
+    justify-content: center !important;
+    border-radius: 5px !important;
+    border: 4px solid var(--black-3, #000) !important;
+    background: var(--yellow--1, #FEE89A) !important;
+    box-shadow: -3px 3px 0px 0px #000 !important;
+    margin-bottom: 20px !important;
   }
 
   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-    color: var(--black-3, #000);
-    font-size: 30px;
-    font-family: 'Red Hat Mono', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 20px 40px;
-    text-transform: none;
+    color: var(--black-3, #000) !important;
+    font-size: 30px !important;
+    font-family: 'Red Hat Mono', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    padding: 20px 40px !important;
+    text-transform: none !important;
 
     &:hover {
-      background: var(--yellow-1, #FDBC26);
+      background: var(--yellow-1, #FDBC26) !important;
     }
   }
 
   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
-    color: var(--black-3, #000);
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background: var(--yellow-1, #FDBC26);
+    color: var(--black-3, #000) !important;
+    font-size: 30px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    background: var(--yellow-1, #FDBC26) !important;
   }
 }
 
