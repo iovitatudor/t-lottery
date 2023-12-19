@@ -1,6 +1,4 @@
 import React from 'react';
-import './styles/desktop.scss';
-import './styles/mobile.scss';
 import TopBar from "./components/TopBar";
 import TopBarMobile from "./components/TopBarMobile";
 import Banner from "./components/Banner";
@@ -10,6 +8,8 @@ import CheckEligibility from "./components/CheckEligibility";
 import HowParticipate from "./components/HowParticipate";
 import TableList from "./components/Tables/TableList";
 import {BrowserView, MobileView} from 'react-device-detect';
+import './styles/desktop.scss';
+import './styles/mobile.scss';
 
 const App = () => {
   return (
