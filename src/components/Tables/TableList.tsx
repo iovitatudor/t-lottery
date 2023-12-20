@@ -21,6 +21,7 @@ const TableList: FC = () => {
   return (
     <div className="table-list-area">
       <Container maxWidth={'xl'}>
+        <h3>Lottery History and My Dashboard</h3>
         <TabContext value={tabValue}>
           <Box>
             <TabList onChange={handleTabChange} aria-label="lab API tabs example">

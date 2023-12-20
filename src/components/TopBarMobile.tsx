@@ -36,7 +36,7 @@ const TopBarMobile: FC = () => {
               <span></span>
             </div>
             <div className={"drawer " + drawerClass}>
-              <a href="#about" className="menu-btn" onClick={disableDrawer}>Daily Lottery</a>
+              <a href="#about" className="menu-btn active" onClick={disableDrawer}>Daily Lottery</a>
               <a href="#lottery" className="menu-btn" onClick={disableDrawer}> Weekly Jackpot</a>
               <a href="#roadmap" className="menu-btn" onClick={disableDrawer}>Rules</a>
             </div>

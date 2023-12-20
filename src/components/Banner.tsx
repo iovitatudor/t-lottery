@@ -7,7 +7,7 @@ const Banner: FC = () => {
       <Container maxWidth={'xl'}>
         <Grid container>
           <Grid item md={12}>
-            <img src="/images/main-banner.png" alt=""/>
+            <img src="/images/ComingSoon.png" alt=""/>
           </Grid>
         </Grid>
       </Container>

@@ -11,7 +11,7 @@ import Newbuyers from "./HoldersTables/Newbuyers";
 import Random from "./HoldersTables/Random";
 import {MobileView, BrowserView} from "react-device-detect";
 
-const HolderTable: FC = () => {
+const HolderTableJackpot: FC = () => {
   const [value, setValue] = React.useState('1');
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -19,7 +19,7 @@ const HolderTable: FC = () => {
   };
 
   return (
-    <div className="holder-table-area">
+    <div className="holder-table-area jackpot-style">
       <div className="holder-table-area-inside">
         <Container maxWidth={"xl"}>
           <div className="table-wrapper">
@@ -30,15 +30,9 @@ const HolderTable: FC = () => {
                     <div className="tabs-area">
                       <h3><img src="/images/holder-list-icon.png" alt=""/>Holders Table</h3>
                       <Box>
-                        <TabList onChange={handleChange} aria-label="lab API tabs example">
-                          <Tab label="Top Owners" value="1"/>
-                          <Tab label="TNew Buyers" value="2"/>
-                          <Tab label="2nd Chance" value="3"/>
-                          <Tab label="Random" value="4"/>
                           <BrowserView className="search-wrapper">
                             <input type="text" value="Search..." className="search-input"/>
                           </BrowserView>
-                        </TabList>
                       </Box>
                       <MobileView><input type="text" value="Search..." className="search-input"/></MobileView>
                     </div>
@@ -58,4 +52,4 @@ const HolderTable: FC = () => {
     ;
 }
 
-export default HolderTable;
+export default HolderTableJackpot;

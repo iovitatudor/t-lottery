@@ -220,26 +220,24 @@ h3 {
         }
 
         h2 {
-          color: var(--black-3, #000);
-          font-size: 70px;
+          color: var(--blue-primary, #5AC4EC);
+          text-shadow: 7px 7px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, 3px 3px 0 #000;
+          font-size: 78px;
+          font-style: normal;
           font-weight: 700;
-          letter-spacing: 3.5px;
-          text-transform: uppercase;
+          line-height: normal;
+          text-align: left;
+          margin-bottom: 50px;
         }
 
         h4 {
-          color: var(--blue-primary, #5AC4EC);
-          text-align: center;
-          text-shadow: -5px 5px 0px #000;
-          font-size: 80px;
+          color: var(--black-3, #000);
+          font-size: 70px;
+          font-style: normal;
           font-weight: 700;
-          display: flex;
-          align-items: center;
-          margin-top: 110px;
-
-          img {
-            width: 135px;
-          }
+          line-height: normal;
+          letter-spacing: 3.5px;
+          text-transform: uppercase;
         }
       }
     }
@@ -278,7 +276,6 @@ h3 {
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      //padding: 100px 0 80px 0;
 
       img {
         height: 80px;
@@ -308,6 +305,12 @@ h3 {
         background-color: #FEDB63;
       }
 
+      .search-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+      }
+
       .search-input {
         border-radius: 5px;
         border: 1px solid var(--black-3, #000);
@@ -321,6 +324,7 @@ h3 {
         letter-spacing: 0.9px;
         padding-left: 20px;
         margin-left: 15%;
+        height: 55px;
       }
     }
 
@@ -439,7 +443,7 @@ h3 {
 .how-participate-area {
   background-image: url("../../public/images/bg-3.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center 10px;
   padding-top: 70px;
   padding-bottom: 150px;
@@ -500,9 +504,13 @@ h3 {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 10px;
-  padding-top: 250px;
+  padding-top: 100px;
   padding-bottom: 150px;
   background-color: #f14727;
+
+  h3 {
+    margin-bottom: 60px;
+  }
 
   .css-jpln7h-MuiTabs-scroller, .css-1anid1y {
     display: flex !important;
@@ -618,7 +626,11 @@ h3 {
   background: var(--yellow--1, #FEE89A);
   box-shadow: -5px 5px 0px 0px #000;
   position: relative;
-  padding: 50px 15px 100px 15px;
+
+  .lottery-area-inside {
+    padding: 70px 15px 100px 15px;
+
+  }
 
   .star-position {
     background-image: url("../../public/images/star-bg.png");
@@ -681,49 +693,20 @@ h3 {
     }
   }
 
-  .buy-tickets-area {
-    text-align: center;
-    margin-top: 80px;
-    color: var(--black-3, #000);
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
-    button {
-      border-radius: 5px;
-      border: 4px solid var(--black-3, #000);
-      background: var(--blue-primary, #5AC4EC);
-      box-shadow: -5px 5px 0px 0px #000;
-      color: var(--black-3, #000);
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.9px;
-      padding: 20px 30px;
-      cursor: pointer;
-      margin-top: 50px;
-
-      &:hover {
-        box-shadow: none;
-      }
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    h6 {
-      color: var(--black-3, #000);
-      font-size: 50px;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      margin: 40px auto 20px auto;
-    }
+  img {
+    max-width: 100%;
   }
 
+  h6 {
+    color: var(--black-3, #000);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin: 40px auto 20px auto;
+  }
 }
+
 
 .css-ttwr4n {
   display: none;
@@ -740,5 +723,258 @@ h3 {
   .ticket {
     min-width: 300px;
     margin: 20px 15px;
+  }
+}
+
+.buy-tickets-area {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--black-3, #000);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  button {
+    border-radius: 5px;
+    border: 4px solid var(--black-3, #000);
+    background: var(--blue-primary, #5AC4EC);
+    box-shadow: -5px 5px 0px 0px #000;
+    color: var(--black-3, #000);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    padding: 20px 30px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.slick-arrow {
+  top: -40px;
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  padding: 0;
+
+  &:hover {
+    border: 1px solid transparent;
+  }
+
+  &::before {
+    width: 120px;
+    height: 50px;
+    font-family: 'Red Hat Mono', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    position: absolute;
+    border-radius: 30px;
+  }
+}
+
+.slick-next {
+  right: -5px;
+
+  &::before {
+    content: "next →" !important;
+    background-color: #DF5537;
+  }
+}
+
+.slick-prev {
+  left: -10px;
+
+  &::before {
+    content: "← prev" !important;
+    background-color: #EA92B6;
+  }
+}
+
+.prizes-area {
+  background-image: url("../../public/images/bg-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 10px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #02c7f0;
+
+  .prizes-area-inside {
+    background-image: url("../../public/images/bg-6.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: -30px -30px;
+    padding: 40px;
+    border-radius: 5px;
+    border: 4px solid var(--black-3, #000);
+    box-shadow: -5px 5px 0px 0px #000;
+    text-align: center;
+
+    h3 {
+      img {
+        height: 60px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  p {
+    color: var(--black-2, #403F4C);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    margin-bottom: 40px;
+  }
+
+  h6 {
+    color: var(--pink-1, #D75482);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+
+  .prizes-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .prize-item {
+      width: 350px;
+      text-align: center;
+      border-radius: 10px;
+      border: 4px solid var(--black-3, #000);
+      background: var(--yellow-primary, #FEDB63);
+      box-shadow: -5px 5px 0px 0px #000;
+      margin: 20px;
+
+      h5 {
+        color: #000;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 1.5px;
+        margin-top: 40px;
+      }
+
+      p {
+        color: #000;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 1.5px;
+        margin-top: 36px;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        color: var(--blue-primary, #5AC4EC);
+        text-align: center;
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 7.5px;
+        margin-bottom: 50px;
+      }
+
+      h6 {
+        color: #000;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .blue-bg {
+      background-color: #5AC4EC;
+
+      h4 {
+        color: #FEDB63;
+      }
+    }
+  }
+}
+
+.jackpot-style {
+  background-image: url("../../public/images/bg-7.png");
+  background-color: #f14727;
+
+  .table-wrapper {
+    background-image: url("../../public/images/bg-9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #FEDB63;
+  }
+}
+
+.participate-eligibility-jackpot-area {
+  background-image: url("../../public/images/bg-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 10px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #02c7f0;
+
+  h3 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .step-item {
+    border-radius: 5px;
+    border: 4px solid var(--black-3, #000);
+    background: var(--blue--1, #A4DEF4);
+    box-shadow: -5px 5px 0px 0px #000;
+    margin: 20px;
+    text-align: center;
+    padding: 50px;
+    min-height: 500px;
+
+    h5 {
+      color: #000;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    img {
+      height: 145px;
+      margin-top: 45px;
+    }
+
+    p {
+      color: var(--black-3, #000);
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: 0.9px;
+      margin-top: 50px;
+    }
+  }
+  .eligibility-steps {
+    .step-item {
+      background-color: #EA92B6;
+    }
   }
 }

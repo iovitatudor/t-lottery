@@ -135,7 +135,7 @@
   }
 
   .banner-area img {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .rewarding-area {
@@ -225,7 +225,8 @@
     padding: 0 !important;
   }
   .css-heg063-MuiTabs-flexContainer, .css-k008qs {
-    flex-direction: column;
+    //flex-direction: column;
+    overflow-x: scroll;
   }
 
   .table td {
@@ -239,7 +240,10 @@
     line-height: 1;
   }
   .holder-table-area .table-wrapper .table-inside .search-input {
-    display: none;
+    //display: none;
+    height: 50px;
+    margin: 15px auto;
+    width: 100%;
   }
   .table-container {
     overflow-x: scroll;
@@ -323,13 +327,25 @@
     background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
+
+    h3 {
+      font-size: 22px;
+      margin: 10px auto 20px auto;
+    }
+
+    .css-heg063-MuiTabs-flexContainer, .css-k008qs {
+      flex-direction: column;
+      overflow-x: scroll;
+    }
   }
   .table-list-area .css-jpln7h-MuiTabs-scroller, .css-1anid1y {
     flex-direction: column;
   }
   .lottery-area {
-    overflow-x: scroll;
-    padding: 15px;
+    .lottery-area-inside {
+      overflow-x: scroll;
+      padding: 15px;
+    }
   }
   .table-list-area .css-heg063-MuiTabs-flexContainer, .css-k008qs {
     align-items: center;
@@ -381,10 +397,11 @@
     background: var(--yellow--1, #FEE89A) !important;
     box-shadow: -3px 3px 0px 0px #000 !important;
     margin: 5px 0 !important;
-    font-size: 20px !important;
+    font-size: 16px !important;
+    height: 30px;
   }
   .table-list-area .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected, .table-list-area .css-1q2h7u5.Mui-selected {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   .table-list-area .css-heg063-MuiTabs-flexContainer, .css-k008qs {
     border-radius: 0 !important;
@@ -394,6 +411,7 @@
   }
   .history-area .buy-tickets-area button {
     padding: 13px 30px;
+    font-size: 18px;
   }
   .history-area .history-area-inside {
     padding: 0 15px 50px 15px;
@@ -415,4 +433,111 @@
     border: none !important;
     box-shadow: none !important;
   }
-}
+  .buy-tickets-area button {
+    padding: 13px 30px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .rewarding-area .rewarding-area-inside .reward-banner .reward-banner-part h2 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-shadow: 3px 3px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 2px -2px 0 #000;
+  }
+  .holder-table-area .table img {
+    height: auto;
+  }
+  .holder-table-area .table-wrapper .table-inside button {
+    font-size: 14px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .tab-area {
+    margin-top: 40px;
+  }
+  .slick-arrow {
+    top: -25px;
+
+    &::before {
+      font-size: 16px;
+      height: 40px;
+    }
+  }
+  .slick-next {
+    right: 20px;
+  }
+
+  .slick-prev {
+    left: 15px;
+  }
+  .prizes-area .prizes-area-inside {
+    background-size: 150% 150%;
+    padding: 15px;
+
+    h3 {
+      margin: 0 auto;
+      font-size: 32px;
+
+      img {
+        height: 40px;
+      }
+    }
+  }
+  .prizes-area .prizes-list {
+    flex-direction: column;
+  }
+  .prizes-area .prizes-list .prize-item {
+    width: 100%;
+  }
+
+  .prizes-area .prizes-list .prize-item h5 {
+    font-size: 20px;
+  }
+  .prizes-area .prizes-list .prize-item h4 {
+    font-size: 80px;
+  }
+  .prizes-area .prizes-list .prize-item p {
+    font-size: 18px;
+  }
+  .prizes-area .prizes-list .prize-item h6 {
+    font-size: 19px;
+  }
+  .prizes-area .prizes-list {
+    margin-bottom: 30px;
+  }
+  .prizes-area h6 {
+    font-size: 20px;
+  }
+  .prizes-area p {
+    font-size: 14px;
+  }
+  .prizes-area {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+  .participate-eligibility-jackpot-area {
+    background-image: none;
+    background-color: #f14727;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .participate-eligibility-jackpot-area h3 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .participate-eligibility-jackpot-area .step-item {
+    margin: 10px 0;
+    min-height: auto;
+  }
+  .participate-eligibility-jackpot-area .step-item h5 {
+    font-size: 25px;
+  }
+  .participate-eligibility-jackpot-area .step-item img {
+    height: 80px;
+    margin-top: 32px;
+  }
+  .participate-eligibility-jackpot-area .step-item p {
+    font-size: 15px;
+  }
+
+  }
