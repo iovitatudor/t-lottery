@@ -1,14 +1,14 @@
 import React, {FC} from "react";
 import {Container, Grid} from "@mui/material";
-import Countdown from "./Countdown";
+import Timer from "./Timer";
 
 const Rewarding: FC = () => {
   return (
     <div className="rewarding-area">
       <div className="rewarding-area-inside">
         <div className="countdown">
-          <Countdown/>
-
+          {/*<Countdown/>*/}
+          <Timer/>
         </div>
         <Container maxWidth={'xl'}>
           <Grid container className="reward-banner">

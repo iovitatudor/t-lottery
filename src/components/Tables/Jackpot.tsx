@@ -30,6 +30,9 @@ const Jackpot: FC = () => {
               <span className="ball yellow-ball">1</span>
               <span className="ball red-ball">2</span>
               <span className="ball green-ball">4</span>
+              <span className="ball yellow-ball">1</span>
+              <span className="ball red-ball">2</span>
+              <span className="ball green-ball">4</span>
             </td>
             <td>135000</td>
             <td>0x77785...296D04</td>
@@ -43,6 +46,9 @@ const Jackpot: FC = () => {
               <span className="ball orange-ball">2</span>
               <span className="ball pink-ball">7</span>
               <span className="ball yellow-ball">9</span>
+              <span className="ball orange-ball">2</span>
+              <span className="ball pink-ball">7</span>
+              <span className="ball yellow-ball">9</span>
             </td>
             <td>135000</td>
             <td>0x77785...296D04</td>
@@ -53,6 +59,9 @@ const Jackpot: FC = () => {
               <img src="/images/prize-3.png" alt=""/>
             </td>
             <td>
+              <span className="ball green-ball">4</span>
+              <span className="ball pink-ball">3</span>
+              <span className="ball red-ball">2</span>
               <span className="ball green-ball">4</span>
               <span className="ball pink-ball">3</span>
               <span className="ball red-ball">2</span>

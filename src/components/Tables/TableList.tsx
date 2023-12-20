@@ -8,6 +8,8 @@ import {Container} from "@mui/material";
 import Lottery from "./Lottery";
 import Jackpot from "./Jackpot";
 import History from "./History";
+import Winnings from "./Winnings";
+import Tickets from "./Tickets";
 
 const TableList: FC = () => {
   const [tabValue, setTabValue] = React.useState('jackpot');
@@ -24,7 +26,8 @@ const TableList: FC = () => {
             <TabList onChange={handleTabChange} aria-label="lab API tabs example">
               <Tab label="JackPot" value="jackpot"/>
               <Tab label="Lottery" value="lottery"/>
-              <Tab label="History" value="history"/>
+              <Tab label="My Winnings" value="winnings"/>
+              <Tab label="My Tickets" value="tickets"/>
             </TabList>
           </Box>
           <TabPanel value="jackpot">
@@ -32,6 +35,12 @@ const TableList: FC = () => {
           </TabPanel>
           <TabPanel value="lottery">
             <Lottery/>
+          </TabPanel>
+          <TabPanel value="winnings">
+            <Winnings/>
+          </TabPanel>
+          <TabPanel value="tickets">
+            <Tickets/>
           </TabPanel>
           <TabPanel value="history">
             <History/>
