@@ -1,7 +1,16 @@
 import React, {FC, useState} from "react";
 import {Container, Grid} from "@mui/material";
+import {NavLink, useLocation} from "react-router-dom";
 
 const TopBarMobile: FC = () => {
+  const location = useLocation();
+
+  //destructuring pathname from location
+  const { pathname } = location;
+
+  //Javascript split method to get the name of the path in array
+  const splitLocation = pathname.split("/");
+
   const [burgherClass, setBurgherClass] = useState('');
   const [drawerClass, setDrawerClass] = useState('');
 
@@ -36,8 +45,12 @@ const TopBarMobile: FC = () => {
               <span></span>
             </div>
             <div className={"drawer " + drawerClass}>
-              <a href="#about" className="menu-btn active" onClick={disableDrawer}>Daily Lottery</a>
-              <a href="#lottery" className="menu-btn" onClick={disableDrawer}> Weekly Jackpot</a>
+              <NavLink to={'/'} className={splitLocation[1] === "/" ? "active menu-btn" : "menu-btn"}>
+                Daily Lottery
+              </NavLink>
+              <NavLink to={'/jackpot'}  className={splitLocation[1] === "jackpot" ? "active menu-btn" : "menu-btn"}>
+                Weekly Jackpot
+              </NavLink>
               <a href="#roadmap" className="menu-btn" onClick={disableDrawer}>Rules</a>
             </div>
           </Grid>
