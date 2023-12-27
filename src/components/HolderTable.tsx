@@ -32,7 +32,7 @@ const HolderTable: FC = () => {
                       <Box>
                         <TabList onChange={handleChange} aria-label="lab API tabs example">
                           <Tab label="Top Owners" value="1"/>
-                          <Tab label="TNew Buyers" value="2"/>
+                          <Tab label="New Buyers" value="2"/>
                           <Tab label="2nd Chance" value="3"/>
                           <Tab label="Random" value="4"/>
                           <BrowserView className="search-wrapper">

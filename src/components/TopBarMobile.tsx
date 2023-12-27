@@ -55,8 +55,8 @@ const TopBarMobile: FC = () => {
             </div>
           </Grid>
           <Grid item md={4} xs={12} className="header-buttons">
-            <button className="main-btn blue-btn">Check if You won</button>
-            <button className="main-btn yellow-btn">Connect Wallet</button>
+            <a href="#tab-list" className="main-btn blue-btn">Check if You won</a>
+            <a href="#" className="main-btn yellow-btn">Connect Wallet</a>
           </Grid>
         </Grid>
       </Container>

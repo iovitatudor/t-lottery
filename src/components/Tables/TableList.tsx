@@ -19,7 +19,7 @@ const TableList: FC = () => {
   };
 
   return (
-    <div className="table-list-area">
+    <div className="table-list-area" id="tab-list">
       <Container maxWidth={'xl'}>
         <h3>Lottery History and My Dashboard</h3>
         <TabContext value={tabValue}>

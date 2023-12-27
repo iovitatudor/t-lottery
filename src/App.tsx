@@ -5,7 +5,6 @@ import Jackpot from "./pages/Jackpot";
 import './styles/desktop.scss';
 import './styles/mobile.scss';
 
-
 const App = () => {
   return (
     <React.Fragment>

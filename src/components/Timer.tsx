@@ -9,7 +9,7 @@ interface TimeDisplayValuesType {
 
 // const nextYear = new Date().getFullYear() + 1;
 // const targetDate = new Date(`Jan 1, ${nextYear} 00:00:00`).getTime();
-const targetDate = new Date(`Dec 26, 2023 20:00:00`).getTime();
+const targetDate = new Date(`Dec 30, 2024 20:00:00`).getTime();
 
 const generateTimeDisplay = (): TimeDisplayValuesType => {
   const rightJustNow = new Date().getTime();
@@ -33,7 +33,10 @@ const Timer: FC = () => {
   }, []);
 
   return (
-    <>
+    <div className="countdown">
+      <div className="timer-mock">
+        Coming soon....
+      </div>
       {
         (timeDisplay.seconds === 0) && (timeDisplay.minutes === 0) && (timeDisplay.hours === 0) ?
           <p style={{fontSize: '22px'}}>
@@ -57,7 +60,7 @@ const Timer: FC = () => {
             </div>
           </>
       }
-    </>
+    </div>
   );
 };
 

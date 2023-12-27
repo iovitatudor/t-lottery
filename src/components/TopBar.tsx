@@ -23,7 +23,7 @@ const TopBar: FC = () => {
               <img src="/images/lottery-btn-icon.png" alt=""/>
               Daily Lottery
             </NavLink>
-            <NavLink to={'jackpot'}  className={splitLocation[1] === "jackpot" ? "active menu-btn" : "menu-btn"}>
+            <NavLink to={'/jackpot'}  className={splitLocation[1] === "jackpot" ? "active menu-btn" : "menu-btn"}>
               <img src="/images/jackpod-btn-icon.png" alt=""/>
               Weekly Jackpot
             </NavLink>
@@ -33,8 +33,8 @@ const TopBar: FC = () => {
             </a>
           </Grid>
           <Grid item md={4} className="header-buttons">
-            <button className="main-btn blue-btn">Check if You won</button>
-            <button className="main-btn yellow-btn">Connect Wallet</button>
+            <a href="#tab-list" className="main-btn blue-btn">Check if You won</a>
+            <a href="#" className="main-btn yellow-btn">Connect Wallet</a>
           </Grid>
         </Grid>
       </Container>

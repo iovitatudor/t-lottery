@@ -3,11 +3,10 @@ import {Container, Grid} from "@mui/material";
 
 const CheckEligibility: FC = () => {
   return (
-    <div className="check-eligibility-area">
+    <div className="check-eligibility-area" id="eligibility">
       <h3>
         <img src="/images/017-checked.png" alt=""/>Check to see Your eligibility
       </h3>
-
       <Container maxWidth={'xl'}>
         <Grid container>
           <Grid item md={4} xs={12}>

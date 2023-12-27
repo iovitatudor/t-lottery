@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import {Container, Grid} from "@mui/material";
+import BuyTickets from "./BuyTickets";
 
 const ParticipateEligibilityJackpot: FC = () => {
   return (
@@ -28,10 +29,7 @@ const ParticipateEligibilityJackpot: FC = () => {
               <p>Be on this page when the timer above ends to watch the live prize drawing</p></div>
           </Grid>
           <Grid item md={12} xs={12}>
-            <div className="buy-tickets-area">
-              <button>Buy tickets</button>
-              <br/><br/>
-            </div>
+            <BuyTickets/><br/><br/>
           </Grid>
         </Grid>
         <h3>Check to see Your eligibility</h3>
@@ -57,9 +55,7 @@ const ParticipateEligibilityJackpot: FC = () => {
               <p> And see if You are eligible and the estimation of Your chances to win the prize</p></div>
           </Grid>
           <Grid item md={12} xs={12}>
-            <div className="buy-tickets-area">
-              <button>Buy tickets</button>
-            </div>
+            <BuyTickets/>
           </Grid>
         </Grid>
 

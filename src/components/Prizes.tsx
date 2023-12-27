@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import {Container, Grid} from "@mui/material";
+import BuyTickets from "./BuyTickets";
 
 const Prizes: FC = () => {
   return (
@@ -25,9 +26,7 @@ const Prizes: FC = () => {
             </div>
           </div>
           <p>* All tokens collected from tickets sale will be burned</p>
-          <div className="buy-tickets-area">
-            <button>Buy tickets</button>
-          </div>
+          <BuyTickets/>
           <h6>Ticket price = 1000 $Time</h6>
         </div>
       </Container>

@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 
-const ByAmount: FC = () => {
+const JackpotTable: FC = () => {
   return (
     <div className="table-container">
       <table className="table">
@@ -8,7 +8,7 @@ const ByAmount: FC = () => {
         <tr>
           <th>Position</th>
           <th>User Address</th>
-          <th>Total tokens</th>
+          <th>Tickets</th>
           <th>Potential winnings</th>
           <th>Eligibility</th>
         </tr>
@@ -16,32 +16,30 @@ const ByAmount: FC = () => {
         <tbody>
         <tr>
           <td>1</td>
-          <td>0xF75a9ffE9f967099599...</td>
-          <td>159801</td>
-        
-          <td>23500</td>
+          <td>0xF75a9ffE9f9679423423...</td>
+          <td>150</td>
+          <td>18%</td>
           <td><img src="/images/eligible.png" alt=""/></td>
         </tr>
         <tr>
           <td>2</td>
-          <td>0xF75a9ffE9f967099599...</td>
-          <td>159801</td>
-        
-          <td>23500</td>
+          <td>0xF75a9ffE976864...</td>
+          <td>150</td>
+          <td>18%</td>
           <td><img src="/images/not-eligible.png" alt=""/></td>
         </tr>
         <tr>
           <td>3</td>
-          <td>0xF75a9ffE9f967099599...</td>
-          <td>159801</td>
-        
-          <td>23500</td>
+          <td>0xF75a9ffE9f967423423...</td>
+          <td>150</td>
+          <td>18%</td>
           <td><img src="/images/eligible.png" alt=""/></td>
         </tr>
+
         </tbody>
       </table>
     </div>
   );
 }
 
-export default ByAmount;
+export default JackpotTable;

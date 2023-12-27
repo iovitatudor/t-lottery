@@ -9,7 +9,6 @@ const Newbuyers: FC = () => {
           <th>Position</th>
           <th>User Address</th>
           <th>Total tokens</th>
-          <th>Hold Time</th>
           <th>Potential winnings</th>
           <th>Eligibility</th>
         </tr>
@@ -19,7 +18,7 @@ const Newbuyers: FC = () => {
           <td>1</td>
           <td>0xF75a9ffE9f967091239...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/eligible.png" alt=""/></td>
         </tr>
@@ -27,7 +26,7 @@ const Newbuyers: FC = () => {
           <td>2</td>
           <td>0xF75a9ffE9f967099000...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/not-eligible.png" alt=""/></td>
         </tr>
@@ -35,7 +34,7 @@ const Newbuyers: FC = () => {
           <td>3</td>
           <td>0xF75a9ffE9f9670994546...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/eligible.png" alt=""/></td>
         </tr>
@@ -43,7 +42,7 @@ const Newbuyers: FC = () => {
           <td>4</td>
           <td>0xF75a9ffE9f9670994546...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/eligible.png" alt=""/></td>
         </tr>
@@ -51,7 +50,7 @@ const Newbuyers: FC = () => {
           <td>5</td>
           <td>0xF75a9ffE9f9670994546...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/not-eligible.png" alt=""/></td>
         </tr>
@@ -59,7 +58,7 @@ const Newbuyers: FC = () => {
           <td>6</td>
           <td>0xF75a9ffE9f967091239...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/eligible.png" alt=""/></td>
         </tr>
@@ -67,7 +66,7 @@ const Newbuyers: FC = () => {
           <td>7</td>
           <td>0xF75a9ffE9f967099000...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/not-eligible.png" alt=""/></td>
         </tr>
@@ -75,7 +74,7 @@ const Newbuyers: FC = () => {
           <td>8</td>
           <td>0xF75a9ffE9f9670994546...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/eligible.png" alt=""/></td>
         </tr>
@@ -83,7 +82,7 @@ const Newbuyers: FC = () => {
           <td>9</td>
           <td>0xF75a9ffE9f9670994546...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/not-eligible.png" alt=""/></td>
         </tr>
@@ -91,7 +90,7 @@ const Newbuyers: FC = () => {
           <td>10</td>
           <td>0xF75a9ffE9f9670994546...</td>
           <td>159801</td>
-          <td>1D:11H:13M:20S</td>
+        
           <td>23500</td>
           <td><img src="/images/not-eligible.png" alt=""/></td>
         </tr>

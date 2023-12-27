@@ -15,7 +15,7 @@ const Lottery: FC = () => {
       <BrowserView><TopBar/></BrowserView>
       <MobileView><TopBarMobile/></MobileView>
       <Banner/>
-      <Rewarding/>
+      <Rewarding poolName="Lottery" buyTickets={false} checkEligibility={true}/>
       <HolderTable/>
       <CheckEligibility/>
       <HowParticipate/>
